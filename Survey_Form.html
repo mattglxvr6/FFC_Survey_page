@@ -1,0 +1,47 @@
+<html>
+
+    <h1 id="title">Survey Form</h1>
+    <head> 
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <p id="description"> 
+	Let us know how much runnning you do.
+    </p>
+	
+    <form id="survey-form">
+
+        
+        <label id="name-label" for="name"> Name:</label>
+            <input type="text" name="name" id="name" class="input-field" placeholder="Enter Name" required>
+        <label id="email-label" for="email"> Email:</label>
+            <input type="email" name="email" id="email" class="input-field" placeholder="Enter Email Address"required >
+        <label id="number-label" for="number"> Age:</label> 
+            <input id="number" type="number" name="number" min="1" max="125" class="input-field" placeholder="Enter Your Age">
+        
+        <label> What type of Running is your favorite? </label>
+        <select id="dropdown" name="runType">
+            <option value="Road">Road</option>
+            <option value="Track">Track</option>
+            <option value="Trail">Trail</option>
+            <option value="AnySurfaceAnyDistance">Any Surface, Any Distance</option>
+        </select>
+       
+        
+        <label> How many miles a week do you run?</label>
+        <ul style="list-style: none">
+            <li><label>20-30 Miles<input name="radio-buttons" value="1"type="radio"></label></li>
+            <li><label>30-40 Miles<input name="radio-buttons" value="2" type="radio"></label></li>
+            <li><label>40+ Miles<input name="radio-buttons" value="3" type="radio"></label></li>
+        </ul>
+    
+        <label> What type of content would you like to see in the future?</label>
+        <ul style="list-style: none">
+            <li><label>Training plans<input name="check-box" value="1" type="checkbox"></label></li>
+            <li><label>Race Reports<input name="check-box" value="2" type="checkbox"></label></li>
+            <li><label>Gear Reviews<input name="check-box" value="3" type="checkbox"></label></li>
+        </ul>
+        <textarea placeholder="Enter additional comments hear"></textarea>
+        <button id="submit" type="submit">Submit</button>
+  
+    </form>    
+</html>
